@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- css link -->
+   <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;margin-top: auto; margin-bottom: 20px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form action="">
+      <div class="header">
+        <h1 class="title">Todo</h1>
+        <img class="moon" src="/images/icon-moon.svg" alt="icon-moon" class="light-mode">
+        <img class="sun" src="/images/icon-sun.svg" alt="icon-sun" class="dark-mode">
+      </div>
+      <input type="text" placeholder="create a new todo..."><span></span>
+      <div class="contents">
+        <ul class="list-container">
+          <!-- <li class="list-items completed">jog around the park 3x <span></span></li>
+          <li class="list-items completed">10 minutes meditation</li>
+          <li class="list-items">read for 1 hour</li>
+          <li class="list-items">pick up groceries</li> -->
+        </ul>
+        
+          <div class="links">
+            <span class="items-left"></span>
+            <div class="desk filter">
+              <button class="active">All</button>
+              <button>Active</button>
+              <button>Completed</button>
+            </div>
+            <button class="clear-btn">Clear Completed</button>
+          </div>
+      </div>
+
+      <!-- mobile filter buttons -->
+       <div class="mob filter">
+            <button class="active">All</button>
+            <button>Active</button>
+            <button>Completed</button>
+        </div>
+    </form>
+  </div>
+
+  <div class="small">
+    <p>Drag and drop to reorder list</p>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Optimist</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
